@@ -3,7 +3,7 @@
 <ServerPack version="3.4"
     xmlns="http://www.mcupdater.com"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mcupdater.com http://files.mcupdater.com/ServerPackv2.xsd">
-    <Server id="playpack3" name="PlayPack 3" version="1.6.4" abstract="false" revision="1" iconUrl="https://launcher.dmptr.com/launcher/pp3.png" mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla">
+    <Server id="playpack3" name="PlayPack 3" version="1.6.4" abstract="false" revision="2" iconUrl="https://launcher.dmptr.com/launcher/pp3.png" mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla">
         <Meta>
             <note>The original version of PlayPack for 1.6.4. Now retired.</note>
         </Meta>
