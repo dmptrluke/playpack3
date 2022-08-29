@@ -505,46 +505,58 @@
                 <URL>https://www.minecraftforum.net/topic/1285120-164smpforge-aquaculture/</URL>
             </Meta>
         </Module>
-        <Module id="thermalexpansion" name="Thermal Expansion">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/thermalexpansion-3.0.0.7.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>37470408cb00cb58915615676e6c2207</MD5>
-            <Meta>
-                <version>3.0.0.7</version>
-                <URL>https://www.minecraftforum.net/topic/1773528-164-team-cofh-mods-thermal-expansion-300b9/</URL>
-            </Meta>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/cofh/ThermalExpansion.cfg</URL>
-                <Path>config/cofh/ThermalExpansion.cfg</Path>
-                <MD5>d3c577c17aeccb70e47ab2bd6a08517c</MD5>
-            </ConfigFile>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/cofh/ThermalExpansion-Fuels.cfg</URL>
-                <Path>config/cofh/ThermalExpansion-Fuels.cfg</Path>
-                <MD5>0845b86347157f4948cf2537628f4857</MD5>
-            </ConfigFile>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/cofh/ThermalExpansion-Florbs.cfg</URL>
-                <Path>config/cofh/ThermalExpansion-Florbs.cfg</Path>
-                <MD5>210d89b12319dbf5897f3c1c353a8b76</MD5>
-            </ConfigFile>
-        </Module>
-        <Module id="simplyjetpacks" name="SimplyJetpacks">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/SimplyJetpacks-0.3.1.1.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>59075B5DF08B84C63D73670FA0968AEC</MD5>
-            <Meta>
-                <version>0.3.1.1</version>
-                <URL>https://www.minecraftforum.net/topic/2548594-164-simply-jetpacks-0141-rf-powered-jetpacks/</URL>
-            </Meta>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/simplyjetpacks.cfg</URL>
-                <Path>config/simplyjetpacks.cfg</Path>
-                <MD5>24f17be0273e40e646ca2f6df627dfca</MD5>
-            </ConfigFile>
-        </Module>
+		<Module name="Thermal Expansion" id="ThermalExpansion" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/thermalexpansion-3.0.0.7.jar</URL>
+			<Size>2376553</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>37470408cb00cb58915615676e6c2207</MD5>
+			<Meta>
+				<credits>Team CoFH</credits>
+				<description>Expanding Minecraft thermally - provides new options for automation and processing!</description>
+				<version>3.0.0.7</version>
+				<url>http://www.teamcofh.com</url>
+				<authors>Team CoFH</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/cofh/ThermalExpansion-Florbs.cfg</URL>
+				<Path>config/cofh/ThermalExpansion-Florbs.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>3751bd3aba7c3fc3682d0a7c55b0b0c9</MD5>
+			</ConfigFile>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/cofh/ThermalExpansion-Fuels.cfg</URL>
+				<Path>config/cofh/ThermalExpansion-Fuels.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>0fa1024f88673e5c5b211076cb5c894c</MD5>
+			</ConfigFile>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/cofh/ThermalExpansion.cfg</URL>
+				<Path>config/cofh/ThermalExpansion.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>6a009beb96b18d2510fac06f1e464f23</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Simply Jetpacks" id="simplyjetpacks" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/SimplyJetpacks-0.3.1.1.jar</URL>
+			<Size>121175</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>59075b5df08b84c63d73670fa0968aec</MD5>
+			<Meta>
+				<credits>Team CoFH, Pathaleon, kevba10</credits>
+				<description>A mod that adds jetpacks that work on Redstone Flux.</description>
+				<version>0.3.1.1</version>
+				<url></url>
+				<authors>tonius11</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/simplyjetpacks.cfg</URL>
+				<Path>config/simplyjetpacks.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>03d7e9531b44b0734ec9ff021cfb1ada</MD5>
+			</ConfigFile>
+		</Module>
         <Module name="BuildCraft" id="BuildCraft" depends="" side="BOTH">
             <URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/buildcraft-A-1.6.4-4.2.2.jar</URL>
             <Size>1401177</Size>
@@ -571,77 +583,106 @@
                 <MD5>e5dbb122fffea69a57b0536513d7602f</MD5>
             </ConfigFile>
         </Module>
-        <Module id="thaumcraft" name="Thaumcraft 4">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/thaumcraft-4.1.0g.zip</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>9760bb78fc71eb7f449bf3c8ad8cfb34</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/Thaumcraft.cfg</URL>
-                <Path>config/Thaumcraft.cfg</Path>
-                <MD5>0ce4a07b3ec226f19652c0990960f946</MD5>
-            </ConfigFile>
-            <Meta>
-                <version>4.0.5b</version>
-                <URL>https://www.minecraftforum.net/topic/2011841-thaumcraft-405b-updated-24112013/</URL>
-            </Meta>
-        </Module>
-        <Module id="thaumictinkerer" name="Thaumic Tinkerer">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/thaumictinkerer-2.3-140.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>982d702b81ecd096091b6be61bfae087</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/ThaumicTinkerer.cfg</URL>
-                <Path>config/ThaumicTinkerer.cfg</Path>
-                <MD5>a60899081ebc7b3bd21d59f1ad290498</MD5>
-            </ConfigFile>
-            <Meta>
-                <version>2.3-140</version>
-                <URL>https://www.minecraftforum.net/topic/2011841-thaumcraft-405b-updated-24112013/</URL>
-            </Meta>
-        </Module>
-        <Module id="tinkerconstruct" name="Tinker's Construct">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/TConstruct_mc1.6.4_1.5.5.7.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>B30654109BFA51BBE732EC4C58EBC8BF</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/TinkersWorkshop.txt</URL>
-                <Path>config/TinkersWorkshop.txt</Path>
-                <MD5>47dd4245e5f9a6d48192a33385e2ad2f</MD5>
-            </ConfigFile>
-            <Meta>
-                <version>1.5.5.6</version>
-                <URL>https://www.minecraftforum.net/topic/1659892-164tinkers-construct/</URL>
-            </Meta>
-        </Module>
-        <Module id="steelworks" name="Tinker's Steelworks">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/TSteelworks-mc1.6.4_0.0.4.2-fix2.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>BA468BD53D5927E8FE76543C050B27A6</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/TSteelworks.cfg</URL>
-                <Path>config/TSteelworks.cfg</Path>
-                <MD5>12cb3eb02fcd80d37e20182236a06174</MD5>
-            </ConfigFile>
-            <Meta>
-                <version>0.0.4.2</version>
-                <URL>https://www.minecraftforum.net/topic/1659892-164tinkers-construct/</URL>
-            </Meta>
-        </Module>
-        <Module id="mechworks" name="Tinker's Mechworks">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/TMechworks_mc1.6.4_0.1.6.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>52b8cf82577bb9e391eb8bc1da7dd2d0</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/TMechworks.cfg</URL>
-                <Path>config/TMechworks.cfg</Path>
-                <MD5>bb0dad1f3fb801c9714c240581c6589b</MD5>
-            </ConfigFile>
-        </Module>
+		<Module name="Thaumcraft" id="Thaumcraft" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/thaumcraft-4.1.0g.zip</URL>
+			<Size>10651521</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>9760bb78fc71eb7f449bf3c8ad8cfb34</MD5>
+			<Meta>
+				<credits>Special thanks to Dan Scott, Lorc, bonemouse, Scott Killen, Rorax and chicken_bones</credits>
+				<description>Adding a touch of magic to Minecraft</description>
+				<version>4.1.0g</version>
+				<url>http://www.minecraftforum.net/topic/838839-100-thaumcraft/</url>
+				<authors>Azanor</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/Thaumcraft.cfg</URL>
+				<Path>config/Thaumcraft.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>bd9847df8439d740d2e8bc69d3eba482</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Thaumic Tinkerer" id="ThaumicTinkerer" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/thaumictinkerer-2.3-140.jar</URL>
+			<Size>1904980</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>982d702b81ecd096091b6be61bfae087</MD5>
+			<Meta>
+				<credits>Azanor, TheAtlanticCraft, MartysGames, TheWhiteWolves, mDiyo, theFlaxbeard.</credits>
+				<description>An addon to Thaumcraft 4, implementing new content. This mod is a spiritual successor to Elemental Tinkerer. Researches that come from this mod are prefixed by [TT].</description>
+				<version>2.3-140</version>
+				<url>minecraftforum.net/topic/1813058-</url>
+				<authors>Vazkii</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/ThaumicTinkerer.cfg</URL>
+				<Path>config/ThaumicTinkerer.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>8af74c6e8913c7f9d2ef4a69b041cee2</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Tinkers Construct" id="TinkersWorkshop" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/TConstruct_mc1.6.4_1.5.5.7.jar</URL>
+			<Size>4735255</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>b30654109bfa51bbe732ec4c58ebc8bf</MD5>
+			<Meta>
+				<credits>Slime Knights, Samtrion, Abculatter_2</credits>
+				<description>A little of this, a little of that, a lot of tinkering, and a lot of tools</description>
+				<version>@VERSION@</version>
+				<url>http://www.minecraftforum.net/topic/1659892-tinkers-construct</url>
+				<authors>mDiyo, fuj1n, ProgWML6, Sunstrike, Pillbox</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/TinkersWorkshop.txt</URL>
+				<Path>config/TinkersWorkshop.txt</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>59b5a0179be713fe95203d00397b6e71</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Tinkers Steelworks" id="TSteelworks" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/TSteelworks-mc1.6.4_0.0.4.2-fix2.jar</URL>
+			<Size>2826844</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>ba468bd53d5927e8fe76543c050b27a6</MD5>
+			<Meta>
+				<credits>SlimeKnights</credits>
+				<description>A steel-based expansion for Tinkers&apos; Construct. Now you&apos;re tinkering with steel!</description>
+				<version>0.0.4.2-fix2</version>
+				<url>http://www.minecraftforum.net/topic/2227330-</url>
+				<authors>Toops</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/TSteelworks.cfg</URL>
+				<Path>config/TSteelworks.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>a7e3bf135dbf6e8c1849c257e95b555a</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Tinkers Mechworks" id="TMechworks" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/TMechworks_mc1.6.4_0.1.6.jar</URL>
+			<Size>202444</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>52b8cf82577bb9e391eb8bc1da7dd2d0</MD5>
+			<Meta>
+				<credits>Slime Knights</credits>
+				<description></description>
+				<version>0.1.6</version>
+				<url></url>
+				<authors>mDiyo, Pillbox</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/TMechworks.cfg</URL>
+				<Path>config/TMechworks.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>7d8909e00a02f28f8f848fa63d48635a</MD5>
+			</ConfigFile>
+		</Module>
         <Module id="mfr" name="MineFactory Reloaded">
             <URL>https://launcher.dmptr.com/playpack_3/files/mods/MineFactoryReloaded-2.7.9-final.jar</URL>
             <Required>true</Required>
@@ -683,21 +724,26 @@
 				<MD5>cd4d210feace6c5abdc0221f390bbbf3</MD5>
 			</ConfigFile>
 		</Module>
-        <Module id="torchlevers" name="Torch Levers">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/TorchLeversV1.3.2.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>2113DF3E9246082F7D515483AFAFE8C2</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/TorchLevers.cfg</URL>
-                <Path>config/TorchLevers.cfg</Path>
-                <MD5>d5438af03bf69252e72d993531df0a5d</MD5>
-            </ConfigFile>
-            <Meta>
-                <version>1.3.2</version>
-                <URL>https://www.minecraftforum.net/topic/1727570-164-forge-torch-levers-and-more-version-132-updated-2013-9-15/</URL>
-            </Meta>
-        </Module>
+		<Module name="Torch Levers" id="TorchLevers" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/TorchLeversV1.3.2.jar</URL>
+			<Size>92452</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>2113df3e9246082f7d515483afafe8c2</MD5>
+			<Meta>
+				<credits></credits>
+				<description>Adds several concealment and trap style blocks to the game.</description>
+				<version>1.3.2</version>
+				<url>http://bitly.com/TorchLevers</url>
+				<authors>HitchH1k3r</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/TorchLevers.cfg</URL>
+				<Path>config/TorchLevers.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>3e8f1b38e71fc0c733a1ea75b1e25b46</MD5>
+			</ConfigFile>
+		</Module>
         <Module id="minersmark" name="Miner's Mark">
             <URL>https://launcher.dmptr.com/playpack_3/files/mods/makersmark-1.0.jar</URL>
             <Required>true</Required>
@@ -748,41 +794,58 @@
                 <MD5>c6fa8ad63e0bb62cd3ec6fd9c9ee4371</MD5>
             </ConfigFile>
         </Module>
-        <Module id="railcraft" name="Railcraft">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/Railcraft_1.6.4-8.4.0.0.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>83c9166bedf370b7cb393eca8a8c9c7f</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/railcraft/railcraft.cfg</URL>
-                <Path>config/railcraft/railcraft.cfg</Path>
-                <MD5>8cc26324e7405d61680777787cd11f18</MD5>
-            </ConfigFile>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/railcraft/modules.cfg</URL>
-                <Path>config/railcraft/modules.cfg</Path>
-                <MD5>5040bc8a9805fe1eb57aaa7c2a3fccd1</MD5>
-            </ConfigFile>
-            <Meta>
-                <version>8.3.1.0</version>
-                <URL>https://www.minecraftforum.net/topic/701990-162-railcraft-8000-forge/</URL>
-            </Meta>
-        </Module>
-        <Module id="twilightforest" name="Twilight Forest">
-            <URL>https://launcher.dmptr.com/playpack_3/files/mods/twilightforest-1.20.5.jar</URL>
-            <Required>true</Required>
-            <ModType>Regular</ModType>
-            <MD5>ca465ee6717e9a28844b4e5bb6ce8abd</MD5>
-            <ConfigFile>
-                <URL>https://launcher.dmptr.com/playpack_3/files/config/TwilightForest.cfg</URL>
-                <Path>config/TwilightForest.cfg</Path>
-                <MD5>3c951098da46977fdadc367c58e19010</MD5>
-            </ConfigFile>
-            <Meta>
-                <version>1.20.3</version>
-                <URL>https://www.minecraftforum.net/topic/561673-164-the-twilight-forest-v1203-haunting-of-the-knight-phantoms/</URL>
-            </Meta>
-        </Module>
+		<Module name="Railcraft" id="Railcraft" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/Railcraft_1.6.4-8.4.0.0.jar</URL>
+			<Size>2923769</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>83c9166bedf370b7cb393eca8a8c9c7f</MD5>
+			<Meta>
+				<credits>Created by CovertJaguar</credits>
+				<description>Redefine your rails</description>
+				<version>8.4.0.0</version>
+				<url>http://railcraft.info/</url>
+				<authors>CovertJaguar</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/railcraft/modules.cfg</URL>
+				<Path>config/railcraft/modules.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>d17f61d9b28c9eb0e4b999d43cc5f7e7</MD5>
+			</ConfigFile>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/railcraft/railcraft.cfg</URL>
+				<Path>config/railcraft/railcraft.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>1f3527fcb7cdcf032a010fb960f71c20</MD5>
+			</ConfigFile>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/railcraft.cfg</URL>
+				<Path>config/railcraft.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>315fa15edc167b67ca136b72822233ac</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="The Twilight Forest" id="TwilightForest" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_3/files/mods/twilightforest-1.20.5.jar</URL>
+			<Size>2973522</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>ca465ee6717e9a28844b4e5bb6ce8abd</MD5>
+			<Meta>
+				<credits>By Benimatic</credits>
+				<description>An enchanted forest dimension.</description>
+				<version>1.20.5</version>
+				<url>http://http://www.minecraftforum.net/topic/561673-</url>
+				<authors>Benimatic (Ben Mazur)</authors>
+			</Meta>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_3/files/config/TwilightForest.cfg</URL>
+				<Path>config/TwilightForest.cfg</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>70b9e5fcc55ee8bd7648fa4dee2dd9ba</MD5>
+			</ConfigFile>
+		</Module>
         <Module id="bibliocraft" name="BiblioCraft">
             <URL>https://launcher.dmptr.com/playpack_3/files/mods/BiblioCraft[v1.5.5].zip</URL>
             <Required>true</Required>
