@@ -1,0 +1,5 @@
+*.jar
+files/mods/*.zip
+**/texturepacks/files/*.zip
+FP*.xml
+mat_*.zip
