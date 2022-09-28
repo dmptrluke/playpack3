@@ -64,6 +64,13 @@
 				<MD5>15a7d75684144d4d5c4e3529c42c1eaf</MD5>
 			</ConfigFile>
         </Module>
+        <Module name="Ears" id="ears" depends="" side="BOTH">
+			<URL priority="1">https://launcher.dmptr.com/playpack_3/files/mods/ears-forge-1.6-1.4.5.jar</URL>
+			<Size>448861</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>ff1352a1a692219e2d289488dd805473</MD5>
+		</Module>
         <!--<Module id="inventorytweaks" name="Inventory Tweaks">
             <URL>https://launcher.dmptr.com/playpack_3/files/mods/inventorytweaks-1.56-b77.jar</URL>
             <Required isDefault="true">false</Required>
